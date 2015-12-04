@@ -1,0 +1,64 @@
+body {
+    margin-top: 100px;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 80px;
+    height: 80px;
+}
+
+.navbar-nav li a {
+    padding-top: 0;
+}
+
+.navbar-inverse {
+    background: #122239;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color:  #FBCF0E;
+}
+footer {
+    background: #122239;
+    margin-top: 10px;
+}
+
+footer p {
+    color: white;
+}
+
+footer h2,
+footer em {
+    color: #FBCF0E;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #FBCF0E;
+}
+
+.about p {
+    color: white;
+}
+
+.espa {
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+
+
+.responsive-img{
+  max-width: 100%;
+    max-height: 100%;
+}
+
+.desaturate {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.zoom {
+ font-size: 18px;
+}
