@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 
 <head>
   <meta charset="utf-8">
@@ -14,6 +14,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="./public/css/basestyles.css" rel="stylesheet">
   <link href="./public/css/certs.css" rel="stylesheet">
+    <link href="./public/css/highcontrast.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -108,6 +109,10 @@
               <input id="grayscale" title="Ασπρόμαυρο" type="checkbox" name="grayscale" data-size="mini" data-switch-value="false">
               <label for="grayscale">Ασπρόμαυρο</label>
             </div>
+            <div class="highContr">
+              <input id="highContrast" title="Ασπρόμαυρο" type="checkbox" name="highContrast" data-size="mini" data-switch-value="false">
+              <label for="highContrast">Υψηλή Αντίθεση</label>
+            </div>
           </div>
         </div>
       </div>
@@ -119,26 +124,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script>
   <script src="./public/js/grayscale.js"></script>
-  <script type="text/javascript">
-  jQuery(document).ready(function($) {
-    $("[name='textChange']").bootstrapSwitch();
-    $("[name='grayscale']").bootstrapSwitch();
-    $('input[name="textChange"]').on('switchChange.bootstrapSwitch', function(event, state) {
-      if (state === true) {
-        $('body').addClass('zoom');
-      } else {
-        $('body').removeClass('zoom');
-      }
-    });
-    $('input[name="grayscale"]').on('switchChange.bootstrapSwitch', function(event, state) {
-      if (state === true) {
-        grayscale($('body'));
-      } else {
-        grayscale.reset();
-      }
-    });
-  });
-  </script>
+   <script src="./public/js/scripts.js"></script>
 </body>
 
 </html>

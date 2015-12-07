@@ -20,6 +20,7 @@
   <link href="./public/css/basestyles.css" rel="stylesheet">
   <!-- page styles -->
   <link href="./public/css/programs.css" rel="stylesheet">
+    <link href="./public/css/highcontrast.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -111,6 +112,10 @@
               <input id="grayscale" title="Ασπρόμαυρο" type="checkbox" name="grayscale" data-size="mini" data-switch-value="false">
               <label for="grayscale">Ασπρόμαυρο</label>
             </div>
+            <div class="highContr">
+              <input id="highContrast" title="Ασπρόμαυρο" type="checkbox" name="highContrast" data-size="mini" data-switch-value="false">
+              <label for="highContrast">Υψηλή Αντίθεση</label>
+            </div>
           </div>
         </div>
       </div>
@@ -138,26 +143,7 @@
     }, 2400);
   });
   </script>
-  <script type="text/javascript">
-  jQuery(document).ready(function($) {
-    $("[name='textChange']").bootstrapSwitch();
-    $("[name='grayscale']").bootstrapSwitch();
-    $('input[name="textChange"]').on('switchChange.bootstrapSwitch', function(event, state) {
-      if (state === true) {
-        $('body').addClass('zoom');
-      } else {
-        $('body').removeClass('zoom');
-      }
-    });
-    $('input[name="grayscale"]').on('switchChange.bootstrapSwitch', function(event, state) {
-      if (state === true) {
-        grayscale($('body'));
-      } else {
-        grayscale.reset();
-      }
-    });
-  });
-  </script>
+   <script src="./public/js/scripts.js"></script>
 </body>
 
 </html>

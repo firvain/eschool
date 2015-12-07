@@ -1,0 +1,28 @@
+/*.highContrast {
+    background-color: black!important;
+    color: white!important;
+}
+*/
+
+.highContrast * {
+    background-color: black!important;
+    color: white!important;
+    border-color: white!important;
+}
+
+.highContrast a:hover{
+    background-color: white!important;
+    color: black!important;
+}
+
+.highContrast .container .mapKozani *:not(.gmnoprint) {
+    background-color: transparent!important;
+}
+
+.highContrast .container .mapAiani *:not(.gmnoprint) {
+    background-color: transparent!important;
+}
+
+.highContrast .gmnoprint {
+    color: black!important;
+}
