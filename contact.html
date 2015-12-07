@@ -9,8 +9,13 @@
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- animate -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" rel="stylesheet">
+  <!-- bootstrapSwitch -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet">
+  <!-- base styles -->
   <link href="./public/css/basestyles.css" rel="stylesheet">
+  <!-- page styles -->
   <link href="./public/css/contact.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +31,7 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#"><img class="responsive-img" src="./public/images/logo_1_No_Bg.png" alt="e-school"></a>
+        <a class="navbar-brand" href="./index.html"><img class="responsive-img" src="./public/images/logo_1_No_Bg.png" alt="e-school"></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,13 +43,16 @@
               <li><a href="./germanprogram.html">Γερμανικά</a></li>
             </ul>
           </li>
-          <li><a href="#">Ενήλικες</a></li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Πτυχία <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="./englishcerts.html">Αγγλικά</a></li>
+              <li><a href="./germancerts.html">Γερμανικά</a></li>
+            </ul>
+          </li>
         </ul>
         <ul class="nav navbar-nav  navbar-right">
-          <li><a id="zoomIn" href="#"><em class="fa fa-font fa-lg"></em><em class="fa fa-plus"></em></a></li>
-          <li><a id="zoomOut" href="#"><em class="fa fa-font fa-lg"></em><em class="fa fa-minus"></em></a></li>
           <li class="active"><a href="#">Επικοινωνία <span class="sr-only">(current)</span></a></li>
-     <!--      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Γλώσσα <span class="caret"></span></a>
+          <!--      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Γλώσσα <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Ελληνικά (El)</a></li>
               <li><a href="#">English (En)</a></li>
@@ -56,7 +64,7 @@
     </div>
     <!-- /.container-fluid -->
   </nav>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row ">
       <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
         <div id="mapKozani"></div>
@@ -64,7 +72,7 @@
       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
         <div class="contact ">
           <div class="inner animated slideInRight">
-            <address >
+            <address>
               <p> <em class="fa fa-home "></em> Μακρυγιάννη 5 </p>
               <p> <em class="fa fa-globe "></em> Κοζάνη 50 100 </p>
               <p> <em class="fa fa-phone "></em> (24610) 29 990 </p>
@@ -79,9 +87,9 @@
         <div class="contact ">
           <div class="inner animated slideInLeft">
             <address>
-              <p> <em class="fa fa-home "></em>  Μακρυγιάννη 5 </p>
+              <p> <em class="fa fa-home "></em> Μακρυγιάννη 5 </p>
               <p> <em class="fa fa-globe "></em> Αιανή 50 004 </p>
-              <p> <em class="fa fa-phone"></em>  (24610) 29 990 </p>
+              <p> <em class="fa fa-phone"></em> (24610) 29 990 </p>
               <p> <em class="fa fa-envelope "></em><a href="mailto:eschool.kzn@gmail.com"> eschool.kzn@gmail.com</a> </p>
             </address>
           </div>
@@ -98,10 +106,10 @@
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <h2> Επικοινωνία </h2>
           <address>
-          <p> <em class="fa fa-home "></em> Μακρυγιάννη 5 </p>
-              <p> <em class="fa fa-globe "></em> Κοζάνη 50 100 </p>
-              <p> <em class="fa fa-phone "></em> (24610) 29 990 </p>
-              <p> <em class="fa fa-envelope "></em><a href="mailto:eschool.kzn@gmail.com"> eschool.kzn@gmail.com</a> </p>
+            <p> <em class="fa fa-home "></em> Μακρυγιάννη 5 </p>
+            <p> <em class="fa fa-globe "></em> Κοζάνη 50 100 </p>
+            <p> <em class="fa fa-phone "></em> (24610) 29 990 </p>
+            <p> <em class="fa fa-envelope "></em><a href="mailto:eschool.kzn@gmail.com"> eschool.kzn@gmail.com</a> </p>
           </address>
         </div>
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -116,12 +124,27 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+          <div class="accessibility">
+            <div class="textChange">
+              <input id="textChange" title="Αλλαγή Μεγέθους" type="checkbox" name="textChange" data-size="mini" data-switch-value="false">
+              <label for="textChange">Μεγάλο Μέγεθος Γραμματοσειράς</label>
+            </div>
+            <div class="grayscale">
+              <input id="grayscale" title="Ασπρόμαυρο" type="checkbox" name="grayscale" data-size="mini" data-switch-value="false">
+              <label for="grayscale">Ασπρόμαυρο</label>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- Bootstrap JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="./public/js/grayscale.js"></script>
   <script type="text/javascript">
   var map, markerKozani, markerAiani, mapKozani, mapAiani;
 
@@ -156,15 +179,13 @@
       icon: image,
       title: 'E-school Αιανής'
     });
-  markerKozani.addListener('click', function() {
-    toggleBounce(markerKozani);
-  });
-  markerAiani.addListener('click', function() {
-    toggleBounce(markerAiani);
-  });
-
+    markerKozani.addListener('click', function() {
+      toggleBounce(markerKozani);
+    });
+    markerAiani.addListener('click', function() {
+      toggleBounce(markerAiani);
+    });
   }
-
 
   function toggleBounce(marker) {
     if (marker.getAnimation() !== null) {
@@ -174,19 +195,27 @@
     }
   }
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsq9-UdoLjT50t9gNeeu-tTsB8KtrwAbU&callback=initMap">
-  </script>
-   <script src="./public/js/grayscale.js"></script>
-    <script type="text/javascript">
-  $("#zoomIn").click(function(event) {
-    event.preventDefault();
-    $('body').addClass('zoom');
-    $('.inner').addClass('zoom');
-  });
-  $("#zoomOut").click(function(event) {
-    event.preventDefault();
-    $('body').removeClass('zoom');
-
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsq9-UdoLjT50t9gNeeu-tTsB8KtrwAbU&callback=initMap"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script>
+  <script src="./public/js/grayscale.js"></script>
+  <script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $("[name='textChange']").bootstrapSwitch();
+    $("[name='grayscale']").bootstrapSwitch();
+    $('input[name="textChange"]').on('switchChange.bootstrapSwitch', function(event, state) {
+      if (state === true) {
+        $('body').addClass('zoom');
+      } else {
+        $('body').removeClass('zoom');
+      }
+    });
+    $('input[name="grayscale"]').on('switchChange.bootstrapSwitch', function(event, state) {
+      if (state === true) {
+        grayscale($('body'));
+      } else {
+        grayscale.reset();
+      }
+    });
   });
   </script>
 </body>
