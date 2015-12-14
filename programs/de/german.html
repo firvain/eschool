@@ -5,16 +5,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>E-School || Αρχική</title>
+  <title>E-School || Πρόγραμμα Αγγλικών</title>
   <!-- font -->
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,700italic,500italic,400italic,300italic,300' rel='stylesheet' type='text/css'>
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet">
+  <!-- fontAwasome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="./public/css/basestyles.css" rel="stylesheet">
-  <link href="./public/css/certs.css" rel="stylesheet">
-    <link href="./public/css/highcontrast.css" rel="stylesheet">
+  <!-- animate -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" rel="stylesheet">
+  <!-- bootstrapSwitch -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet">
+  <!-- base styles -->
+  <link href="../../public/css/basestyles.css" rel="stylesheet">
+  <!-- page styles -->
+  <link href="../../public/css/programs.css" rel="stylesheet">
+    <link href="../../public/css/highcontrast.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -24,32 +30,38 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default  navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default  navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand " href="./index.html"><img class="responsive-img center-block" src="./public/images/logo_1_No_Bg.png" alt="e-school"></a>
+        <a class="navbar-brand" href="../../index.html"><img class="responsive-img" src="../../public/images/logo_1_No_Bg.png" alt="e-school"></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="./index.html"><em class="fa fa-home"></em> Αρχική<span class="sr-only">(current)</span></a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Προγράμματα <span class="caret"></span></a>
+          <li><a href="../../index.html"><em class="fa fa-home"></em> Αρχική<span class="sr-only">(current)</span></a></li>
+          <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Προγράμματα <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="./englishprogram.html">Αγγλικά</a></li>
-              <li><a href="./germanprogram.html">Γερμανικά</a></li>
+              <li><a href="../en/english.html">Αγγλικά</a></li>
+              <li><a href="#">Γερμανικά</a></li>
             </ul>
           </li>
-            <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Πτυχία <span class="caret"></span></a>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Πτυχία <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="./englishcerts.html">Αγγλικά</a></li>
-              <li><a href="#">Γερμανικά</a></li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Αγγλικά</a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="../../certs/en/juv.html">Εφήβων</a></li>
+                  <li><a tabindex="-1" href="../../certs/en/adults.html">Ενηλίκων</a></li>
+                </ul>
+              </li>
+              <li><a href="../../certs/de/juv.html">Γερμανικά</a></li>
             </ul>
           </li>
         </ul>
         <ul class="nav navbar-nav  navbar-right">
-          <li><a href="./contact.html">Επικοινωνία</a></li>
+          <li><a href="../../contact.html">Επικοινωνία</a></li>
           <!--    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Γλώσσα <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Ελληνικά (El)</a></li>
@@ -59,23 +71,20 @@
         </ul>
       </div>
       <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-  <!-- main content -->
+    </div></nav>
   <div class="container">
-   <div class="row">
+    <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="page-header">
-          <h1>Πτυχία Γερμανικών <small>Συντομα Κοντά σας!!!</small></h1> </div>
+          <h1>Προγράμματα Γερμανικών <small>Συντομα Κοντά σας!!!</small></h1> </div>
       </div>
     </div>
   </div>
-  <!-- footer -->
+  </div>
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
           <h2> Επικοινωνία </h2>
           <address>
             <p> <em class="fa fa-home "></em> Μακρυγιάννη 5 </p>
@@ -84,18 +93,16 @@
             <p> <em class="fa fa-envelope "></em><a href="mailto:eschool.kzn@gmail.com"> eschool.kzn@gmail.com</a> </p>
           </address>
         </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
           <div class="espa">
-            <p>Η επιχείρηση ενισχύθηκε στο πλαίσιο του Περιφεριακού Επιχειρησιακού Προγράμματος</p> <img class="responsive-img" src="./public/images/espa_logo.jpg" alt="espa">
+            <p>Η επιχείρηση ενισχύθηκε στο πλαίσιο του Περιφεριακού Επιχειρησιακού Προγράμματος</p> <img class="responsive-img" src="../../public/images/espa_logo.jpg" alt="espa">
             <p>Με τη συγχρηματοδότηση της Ελλάδας και της Ευρωπαϊκής Ένωσης</p>
-            <p>Ποιότητα ζωής για όλους</p>
+            <p class="bliax">Ποιότητα ζωής για όλους</p>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 ">
-          <div class="about">
-            <h2> Σχετικά Με Εμάς </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 about">
+          <h2> Σχετικά Με Εμάς </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </div>
       <div class="row">
@@ -123,8 +130,24 @@
   <!-- Bootstrap JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script>
-  <script src="./public/js/grayscale.js"></script>
-   <script src="./public/js/scripts.js"></script>
+  <script src="../../public/js/grayscale.js"></script>
+  <script type="text/javascript">
+  jQuery(document).ready(function($) {
+    setTimeout(function() {
+      $('.second').removeClass('invisible');
+      $('.second').addClass('animated zoomInDown');
+    }, 800);
+    setTimeout(function() {
+      $('.third').removeClass('invisible');
+      $('.third').addClass('animated zoomInDown');
+    }, 1600);
+    setTimeout(function() {
+      $('.forth').removeClass('invisible');
+      $('.forth').addClass('animated slideInLeft');
+    }, 2400);
+  });
+  </script>
+   <script src="../../public/js/scripts.js"></script>
 </body>
 
 </html>

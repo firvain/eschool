@@ -1,8 +1,12 @@
-body {
-  font-family: 'Ubuntu', sans-serif;
-  margin-top: 100px;
+body
+{
+    font-family: 'Ubuntu', sans-serif;
+
+    margin-top: 70px;
 }
 
+
+/*
 .navbar-brand,
 .navbar-nav li a {
   line-height: 80px;
@@ -13,86 +17,130 @@ body {
 
 .navbar-nav li a {
   padding-top: 0;
-}
+}*/
 
-.navbar-inverse {
-  background: #122239;
+.navbar-brand
+{
+    margin-top: 0;
+    /*height: 2em;*/
+    padding: 0 15px;
+}
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover
+{
+    color: white;
+    background-color: #fbcf0e;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover
+{
+    color: #fff;
+    background-color: #122239;
+}
+.navbar-inverse
+{
+    background: #122239;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
-.navbar-inverse .navbar-nav > .active > a:hover {
-  background-color: #fbcf0e;
+.navbar-inverse .navbar-nav > .active > a:hover
+{
+    background-color: #fbcf0e;
 }
 
-footer {
-  margin-top: 10px;
-  background: #122239;
+footer
+{
+    margin-top: 10px;
+
+    background: #122239;
 }
 
-footer p {
-  color: white;
+footer p
+{
+    color: white;
 }
 
 footer h2,
-footer em {
-  color: #fbcf0e;
+footer em
+{
+    color: #fbcf0e;
 }
 
-footer a {
-  color: white;
+footer a
+{
+    color: white;
 }
 
-footer a:hover {
-  color: #fbcf0e;
+footer a:hover
+{
+    color: #fbcf0e;
 }
 
-.about p {
-  text-align: justify;
-  color: white;
+.about p
+{
+    text-align: justify;
+
+    color: white;
 }
 
-.espa {
-  margin: 20px 0 10px 0;
-  text-align: center;
+.espa
+{
+    margin: 20px 0 10px 0;
+
+    text-align: center;
 }
 
-.responsive-img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
+.responsive-img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.desaturate {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+.desaturate
+{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
 }
-.zoom{
+
+.zoom
+{
     font-size: 18px;
 }
 
-
-
-.accessibility{
+.accessibility
+{
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    display:         flex;
+
     -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
+    -ms-flex-pack: distribute;
             justify-content: space-around;
 }
-.accessibility label{
-    color:white;
-}
-.box-content .list-group-item.active,.box-content .list-group-item.active:focus,.box-content .list-group-item.active:hover {
 
- background-color: #122239;
+.accessibility label
+{
+    color: white;
+}
+
+.box-content .list-group-item.active,
+.box-content .list-group-item.active:focus,
+.box-content .list-group-item.active:hover
+{
     border-color: #122239;
+    background-color: #122239;
 }
 
-.table50{
-  width:50%;
+.table50
+{
+    width: 50%;
 }
+
+
 /*.highContrast,.highContrast nav,.highContrast li {
   background-color: black;
   color: white;
@@ -104,3 +152,78 @@ footer a:hover {
   background-color: black;
   color: white;
 }*/
+
+.dropdown-submenu
+{
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu
+{
+    top: 0;
+    left: 100%;
+    /*margin-top: -6px;*/
+
+    margin-left: -1px;
+    /*border-radius: 0 6px 6px 6px;*/
+}
+
+.dropdown-submenu:hover > .dropdown-menu
+{
+    display: block;
+}
+
+.dropdown-submenu > a:after
+{
+    display: block;
+    float: right;
+
+    width: 0;
+    height: 0;
+    margin-top: 5px;
+    margin-right: -10px;
+
+    content: ' ';
+
+    border-width: 5px 0 5px 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #ccc;
+}
+
+.dropdown-submenu:hover > a:after
+{
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left
+{
+    float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu
+{
+    left: -100%;
+
+    margin-left: 10px;
+
+    border-radius: 6px 0 6px 6px;
+}
+
+.dropdown-menu li a
+{
+    line-height: 1.42857em;
+
+    height: 34px;
+    padding: 3px 20px 3px 20px;
+}
+
+.dropdown-menu li a:hover
+{
+    color: white;
+    background-color: #fbcf0e;
+}
+.bliax
+{
+    color:#E87C0F;
+}

@@ -12,9 +12,9 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="./public/css/basestyles.css" rel="stylesheet">
-  <link href="./public/css/certs.css" rel="stylesheet">
-  <link href="./public/css/highcontrast.css" rel="stylesheet">
+  <link href="../../public/css/basestyles.css" rel="stylesheet">
+  <link href="../../public/css/certs.css" rel="stylesheet">
+  <link href="../../public/css/highcontrast.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -29,27 +29,32 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand " href="./index.html"><img class="responsive-img center-block" src="./public/images/logo_1_No_Bg.png" alt="e-school"></a>
+        <a class="navbar-brand " href="../../index.html"><img class="responsive-img center-block" src="../../public/images/logo_1_No_Bg.png" alt="e-school"></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="./index.html"><em class="fa fa-home"></em> Αρχική<span class="sr-only">(current)</span></a></li>
+          <li><a href="../../index.html"><em class="fa fa-home"></em> Αρχική<span class="sr-only">(current)</span></a></li>
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Προγράμματα <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="./englishprogram.html">Αγγλικά</a></li>
-              <li><a href="./germanprogram.html">Γερμανικά</a></li>
+              <li><a href="../../programs/en/english.html">Αγγλικά</a></li>
+              <li><a href="../../programs/de/german.html">Γερμανικά</a></li>
             </ul>
           </li>
           <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Πτυχία <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Αγγλικά</a></li>
-              <li><a href="./germancerts.html">Γερμανικά</a></li>
+              <li class="dropdown-submenu"> <a tabindex="-1" href="#">Αγγλικά</a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Εφήβων</a></li>
+                  <li><a tabindex="-1" href="./adults.html">Ενηλίκων</a></li>
+                </ul>
+              </li>
+              <li><a href="../de/juv.html">Γερμανικά</a></li>
             </ul>
           </li>
         </ul>
         <ul class="nav navbar-nav  navbar-right">
-          <li><a href="./contact.html">Επικοινωνία</a></li>
+          <li><a href="../../contact.html">Επικοινωνία</a></li>
           <!--    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Γλώσσα <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Ελληνικά (El)</a></li>
@@ -103,9 +108,41 @@
                     <p class="text-center"> Για την επιτυχία απαιτείται βαθμός 65% σε κάθε ενότητα.</p>
                     <p class="text-center"> Οι εξετάσεις διεξάξονται δύο φορές το χρόνο (Δεκέμβριο και Μαΐο).</p>
                   </div>
+                </div>
               </li>
             </ul>
-            </div>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <p class="list-group-item-heading text-center">Michigan</p>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <p class="list-group-item-text text-center yellow-item">Certificate Of Competency In English (ECCE)</p>
+                    <p class="list-group-item-text ">Πτυχίο γενικής γλωσσομάθειας του πανεπιστημίου του Michigan που αντιστοιχεί στο επίπεδο Β2 του Κοινού Ευρωπαϊκού Πλαισίου Αναφοράς για τις Γλώσσες. Το ECCE καλύπτει την ανάγκη για επικοινωνία χρησιμοποιώντας ένα ανώτερο επίπεδο Αγγλικών, τόσο σε γραπτό όσο και σε προφορικό επίπεδο. Eίναι επίσημα αναγνωρισμένο από το Ελληνικό κράτος καθώς επίσης αναγνωρίζεται και από τον ιδιωτικό τομέα ως πιστοποιητικό γνώσης της Αγγλικής γλώσσας.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <p class="list-group-item-text text-center yellow-item">Certificate of Proficiency in English (ECPE)</p>
+                    <p class="list-group-item-text">Το ECPE είναι πτυχίο επίσημα αναγνωρισμένο από το ελληνικό κράτος και από τον ιδιωτικό τομέα ως πιστοποιητικό γλωσσομάθειας της Αγγλικής σε επίπεδο Γ2. Επίσης, αναγνωρίζεται σε διάφορες χώρες και μπορεί να χρησιμοποιηθεί για ακαδημαϊκούς και επαγγελματικούς σκοπούς. Για περισσότερες πληροφορίες σχετικά με την ισχύ του  ECPE για ακαδημαϊκούς σκοπούς, οι κάτοχοί του προτείνεται να απευθύνονται στα ακαδημαϊκά ιδρύματα στα οποία πρόκειται να το υποβάλουν. Οι κάτοχοι του ECPE μπορούν να αποκτήσουν Επάρκεια Προσόντων Διδασκαλίας Αγγλικής Γλώσσας από το Υπουργείο Παιδείας, Δια Βίου Μάθησης και Θρησκευμάτων.
+                    </p>
+                  </div>
+                </div>
+                <div class="hdivider"> </div>
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-center">
+                    <p class="text-center">Τα παραπάνω διαγωνίσματα αποτελούνται</p>
+                    <p class="text-center">(με διαφορετικό βαθμό δυσκολίας ανά επίπεδο)</p>
+                    <p class="text-center"> από τις εξής ενότητες : </p>
+                    <ul class="list-group">
+                      <li class="list-group-item hoverme">Writing (Έκθεση)</li>
+                      <li class="list-group-item hoverme">Grammar (Γραμματική),Vocabulary (Λεξιλόγιο) και Reading (Κατανόηση γραπτού λόγου)</li>
+                      <li class="list-group-item hoverme">Listening Comprehension (Κατανόηση προφορικού λόγου)</li>
+                      <li class="list-group-item hoverme">Speaking (Συνέντευξη)</li>
+                    </ul>
+                    <p class="text-center"> Για την επιτυχία απαιτείται αθροιστικά βαθμός 65%.</p>
+                    <p class="text-center"> Οι εξετάσεις διεξάξονται δύο φορές το χρόνο (Δεκέμβριο και Μαΐο).</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -285,9 +322,9 @@
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
           <div class="espa">
-            <p>Η επιχείρηση ενισχύθηκε στο πλαίσιο του Περιφεριακού Επιχειρησιακού Προγράμματος</p> <img class="responsive-img" src="./public/images/espa_logo.jpg" alt="espa">
+            <p>Η επιχείρηση ενισχύθηκε στο πλαίσιο του Περιφεριακού Επιχειρησιακού Προγράμματος</p> <img class="responsive-img" src="../../public/images/espa_logo.jpg" alt="espa">
             <p>Με τη συγχρηματοδότηση της Ελλάδας και της Ευρωπαϊκής Ένωσης</p>
-            <p>Ποιότητα ζωής για όλους</p>
+            <p class="bliax">Ποιότητα ζωής για όλους</p>
           </div>
         </div>
         <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 ">
@@ -322,8 +359,8 @@
   <!-- Bootstrap JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script>
-  <script src="./public/js/grayscale.js"></script>
-  <script src="./public/js/scripts.js"></script>
+  <script src="../../public/js/grayscale.js"></script>
+  <script src="../../public/js/scripts.js"></script>
 </body>
 
 </html>
