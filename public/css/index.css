@@ -1,6 +1,24 @@
-.media-left{
-  min-height: 200px;
-  min-width:200px;
-  max-height:200px;
-  max-width:200px;
+.media-left {
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
+/*#owl-example .item {
+    margin: 3px;
+}
+
+#owl-example .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}*/
+
+.owl-item img {
+   margin-right:2em;
+}
+.owl-item p {
+  text-align: justify;
 }
