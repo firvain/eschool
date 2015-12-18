@@ -45,7 +45,9 @@ body {
 .navbar-inverse .navbar-nav > .active > a:hover {
     background-color: #fbcf0e;
 }
-
+.navbar-brand{
+    padding: 10px;
+}
 footer {
     margin-top: 10px;
     background: #122239;

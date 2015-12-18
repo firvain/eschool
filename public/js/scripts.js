@@ -39,7 +39,7 @@
        setCookie('zoom', 1, 365);
      } else {
        $('body').removeClass('zoom');
-       document.cookie = "zoom=;expires=Thu, 01 Jan 1970 00:00:00 UTC";
+       deleteCookie('zoom');
      }
    });
    $('input[name="grayscale"]').on('switchChange.bootstrapSwitch', function(event, state) {
@@ -48,7 +48,7 @@
        setCookie('grayscale', 1, 365);
      } else {
        grayscale.reset();
-       document.cookie = "grayscale=;expires=Thu, 01 Jan 1970 00:00:00 UTC";
+      deleteCookie('grayscale');
      }
    });
    $('input[name="highContrast"]').on('switchChange.bootstrapSwitch', function(event, state) {
@@ -59,7 +59,7 @@
      } else {
        grayscale.reset();
        $('body').removeClass('highContrast');
-       document.cookie = "highcontrast=;expires=Thu, 01 Jan 1970 00:00:00 UTC";
+       deleteCookie('highcontrast');
      }
    });
  });
@@ -68,7 +68,8 @@
    var exdate = new Date();
    exdate.setDate(exdate.getDate() + exdays);
    var c_value = escape(value) + ((exdays === null) ? "" : "; expires=" + exdate.toUTCString());
-   document.cookie = c_name + "=" + c_value;
+   console.log(c_value);
+   document.cookie = c_name + "=" + c_value+ '; Path=/;';
  }
 
  function getCookie(cname) {
@@ -81,6 +82,9 @@
    }
    return "";
  }
+function deleteCookie(name) {
+  document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
   var amountScrolled = 300;
   $(window).scroll(function() {
     if ($(window).scrollTop() > amountScrolled) {
