@@ -31,10 +31,12 @@
     left: 0;
     position: fixed;
     display: block;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
     background-color: #fff;
     z-index: 99999;
     text-align: center;
+      -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 #loading-image {
