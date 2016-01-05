@@ -6,6 +6,12 @@
 .table-no-btm-margin{
   margin-bottom: 0;
 }
+.table-no-btm-margin a {
+  color: #333;
+}
+.table-no-btm-margin a:hover {
+  color: white;;
+}
 .box-content {
   padding: 1em;
   text-align: justify;
@@ -32,7 +38,7 @@
 }
 
 .row + .row {
-  margin: 1em;
+  margin-top:  1em;
 }
 
 .box-content >ul> li> strong {
@@ -54,7 +60,13 @@
   background-color: #122239;
   color: #fbcf0e;
 }
-
+.table-hover > tbody > tr:hover a{
+  color: #fbcf0e;
+}
+.table-hover > tbody > tr:hover a:hover{
+  text-decoration: none;
+  color: white;
+}
 .col-center {
   margin: 0 auto;
   float: none;
@@ -71,7 +83,10 @@
   background-color: #fbcf0e;
   color: white;
 }
-
+.yellow-item-blue-font {
+  background-color: #fbcf0e;
+  color: #122239;
+}
 .vcenter {
   display: inline-block;
   vertical-align: middle;
@@ -89,6 +104,18 @@ li:hover.hoverme{
   background-color: #122239;
   color: #fbcf0e;
 }
-.main{
-  height:calc(100vh - 299px);
+.list-special {
+  margin-bottom: 0;
+}
+.list-special .list-group-item {
+ border:none;
+}
+
+.yellow-border {
+  border: 2px solid  #fbcf0e;
+  border-radius: 1em;
+}
+.blue-border {
+  border: 2px solid  #122239;
+  border-radius: 1em;
 }
