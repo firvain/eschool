@@ -1,121 +1,134 @@
 .th-eschool {
-  font-size: 1.2em;
-  color: white;
-  background-color: #122239;
+    font-size: 1.2em;
+    color: white;
+    background-color: #122239;
 }
-.table-no-btm-margin{
-  margin-bottom: 0;
+
+.table-no-btm-margin {
+    margin-bottom: 0;
 }
+
 .table-no-btm-margin a {
-  color: #333;
+    color: #333;
 }
+
 .table-no-btm-margin a:hover {
-  color: white;;
+    color: white;
+    ;
 }
+
 .box-content {
-  padding: 1em;
-  text-align: justify;
-  border: 1px solid #fbcf0e;
-  border-top: 0;
-  border-radius: 4px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+    padding: 1em;
+    text-align: justify;
+    border: 1px solid #fbcf0e;
+    border-top: 0;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .box-content p {
-  color: #122239;
+    color: #122239;
 }
 
 .well {
-  font-size: 1.5em;
-  font-weight: 800;
-  margin-bottom: 0;
-  text-align: center;
-  color: #122239;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  background-color: #fbcf0e;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 0;
+    text-align: center;
+    color: #122239;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #fbcf0e;
 }
 
 .row + .row {
-  margin-top:  1em;
+    margin-top: 1em;
 }
 
 .box-content >ul> li> strong {
-  background-color: #122239;
-  color: white;
-  font-size: 1.2em;
-  width: inherit;
-  padding: 0.2em;
-  border-radius: 0.5em;
+    background-color: #122239;
+    color: white;
+    font-size: 1.2em;
+    width: inherit;
+    padding: 0.2em;
+    border-radius: 0.5em;
 }
 
 .box-content p.list-group-item-heading {
-  font-size: 1.2em;
-  color: white;
-  background-color: #122239;
+    font-size: 1.2em;
+    color: white;
+    background-color: #122239;
 }
 
 .table-hover > tbody > tr:hover {
-  background-color: #122239;
-  color: #fbcf0e;
+    background-color: #122239;
+    color: #fbcf0e;
 }
-.table-hover > tbody > tr:hover a{
-  color: #fbcf0e;
+
+.table-hover > tbody > tr:hover a {
+    color: #fbcf0e;
 }
-.table-hover > tbody > tr:hover a:hover{
-  text-decoration: none;
-  color: white;
+
+.table-hover > tbody > tr:hover a:hover {
+    text-decoration: none;
+    color: white;
 }
+
 .col-center {
-  margin: 0 auto;
-  float: none;
+    margin: 0 auto;
+    float: none;
 }
 
 .drop-cap:first-letter {
-  float: left;
-  font-size: 75px;
-  line-height: 60px;
-  padding: 5px 5px 0 0;
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding: 5px 5px 0 0;
 }
 
 .yellow-item {
-  background-color: #fbcf0e;
-  color: white;
+    background-color: #fbcf0e;
+    color: white;
 }
+
 .yellow-item-blue-font {
-  background-color: #fbcf0e;
-  color: #122239;
+    background-color: #fbcf0e;
+    color: #122239;
 }
+
 .vcenter {
-  display: inline-block;
-  vertical-align: middle;
-  float: none;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
 .hdivider {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  border: 0 none;
-  height: 1px;
-  margin: 1em 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    border: 0 none;
+    height: 1px;
+    margin: 1em 0;
 }
 
-li:hover.hoverme{
-  background-color: #122239;
-  color: #fbcf0e;
+li:hover.hoverme {
+    background-color: #122239;
+    color: #fbcf0e;
 }
+
 .list-special {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
+
 .list-special .list-group-item {
- border:none;
+    border: none;
 }
 
 .yellow-border {
-  border: 2px solid  #fbcf0e;
-  border-radius: 1em;
+    border: 2px solid #fbcf0e;
+    border-radius: 1em;
 }
+
 .blue-border {
-  border: 2px solid  #122239;
-  border-radius: 1em;
+    border: 2px solid #122239;
+    border-radius: 1em;
 }
